@@ -85,9 +85,9 @@ def main():
     # sprawdzenie modelu na danych testowych
     predict_test = model.predict(dataset.X_test)
     print("Accuracy on test data: {0:.2f}".format(metrics.accuracy_score(dataset.y_test, predict_test)))
-    print("\nConfusion matrix:")
+    print("\nConfusion matrix - test data:")
     print(metrics.confusion_matrix(dataset.y_test,predict_test))
-    print("\nClassification Report")
+    print("\nClassification Report - test data")
     print(metrics.classification_report(dataset.y_test, predict_test))
 
 
